@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'minetrack.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Minetrack',
+        'USER': 'gardilcic',
+        'PASSWORD': 'cexano',
+        'HOST': '0.0.0.0',#minetrack.c90skkcikseg.us-east-2.rds.amazonaws.com', 
+        'PORT': '7660', 
     }
 }
+
 
 
 # Password validation
